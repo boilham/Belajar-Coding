@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boil Lens</title>
+</head>
+
+<body>
+    <img src="assets/images/off.gif" alt="" id="lampu1" />
+    <h1>CETREKAN LAMPU ON OFF</h1>
+    <button onclick="saklar('on')">ON</button>
+    <button onclick="saklar('off')">OFF</button>
+
+    <!-- INI ADALAH SCRIPT JS KITA -->
+    <script>
+        function saklar(params) {
+            let lampu1 = document.getElementById("lampu1")
+
+            if (params == "on") {
+                lampu1.src = "assets/images/on.gif";
+            }
+            if (params == "off") {
+                lampu1.src = "assets/images/off.gif";
+            }
+
+            return lampu1;
+
+        }
+    </script>
+</body>
+
+</html>
